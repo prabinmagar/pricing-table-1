@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #f7f7f7;
+}
+
+.pricing-table{
+    width: 90vw;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 40px 0;
+}
+
+.pricing-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    text-align: center;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+}
+
+.table{
+    border: 1px solid #c2c2c2;
+    background: #fff;
+    padding: 70px 60px;
+    position: relative;
+    margin: 40px 0;
+}
+
+.table > h2{
+    color: #0672cb;
+    font-size: 35px;
+}
+
+.table h4{
+    color: #0672cb;
+    font-size: 18px;
+}
+
+.table ul{
+    padding: 15px 0;
+}
+
+.table ul li{
+    padding: 10px 0;
+    display: block;
+    border-bottom: 1px solid #c2c2c2;
+    font-weight: 300;
+}
+
+.table button{
+    background: #0672cb;
+    border: none;
+    width: 100%;
+    padding: 15px 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.table button:hover{
+    background: #0672ff;
+}
+
+.table .price{
+    background: #0672cb;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 0 5px #c2c2c2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.table .price h2{
+    color: #fff;
+    font-size: 35px;
+}
+
+.table .price h2 span{
+    font-size: 15px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 0.3;
+}
+
+
+
+/* media queries */
+
+@media(max-width: 1170px){
+    .pricing-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media(max-width: 768px){
+    .pricing-container{
+        grid-template-columns: 1fr;
+    }
+}
